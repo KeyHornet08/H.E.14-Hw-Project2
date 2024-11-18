@@ -150,17 +150,17 @@ let isRandomizing = false;
 let colorBack = ("#f2f0ce");
 //image preload for all images in assetfolder and preloads it for the drawing array
 function preload() {
-  frameTwo = loadImage("./archBack.png");
-  sounds.push(loadSound('./whistle.mp3'));
-  sounds.push(loadSound('./koto.mp3'));
-  frame = loadImage("./FrameHolderCC.png");
-  myFont = loadFont('./EduAUVICWANTPre-Medium.ttf');
-  chime = loadSound("./chime.mp3");
+  frameTwo = loadImage("archBack.png");
+  sounds.push(loadSound('whistle.mp3'));
+  sounds.push(loadSound('koto.mp3'));
+  frame = loadImage("FrameHolderCC.png");
+  myFont = loadFont('EduAUVICWANTPre-Medium.ttf');
+  chime = loadSound("chime.mp3");
   //Asighning Whistle.mp3 to var
   whistle = sounds[0]; 
   
   for(let i = 0; i < 12; i++){
-    drawingArray[i] = loadImage("./assets/drawing-" + i + ".jpg");
+    drawingArray[i] = loadImage("assets/drawing-" + i + ".jpg");
     
   }
 }
